@@ -10,6 +10,6 @@ RUN apk add --no-cache jq less groff git
 
 ARG AWS_CLI_VERSION
 
-RUN pip install --user awscli==$AWS_CLI_VERSION
+RUN pip install --user awscli
 
 CMD [ "aws" ]
